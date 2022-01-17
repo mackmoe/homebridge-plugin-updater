@@ -2,7 +2,8 @@
 set -x
 
 #Create a txt fille list of all homebridge plugins
-pushd /usr/lib/node_modules
+pushd /usr
+push/lib/node_modules
 PLUGIN_LIST="/home/homebridge/hb-plugins"
 
 #Create a txt fille list of all homebridge plugins
@@ -17,4 +18,4 @@ done < $PLUGIN_LIST
 hb-service restart
 
 #Cleanup
-rm -f /home/homebridge/hb-plugins
+#rm -f /home/homebridge/hb-plugins
